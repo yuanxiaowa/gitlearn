@@ -1,6 +1,5 @@
 # 随身笔记
 
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
+- [x] 只为一片蔚蓝的天空
+- [x] Author:__yuanxiaowa__
+- [x] &copy;2015
