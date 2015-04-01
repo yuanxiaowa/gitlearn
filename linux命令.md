@@ -103,19 +103,23 @@ ls -l（这条命令的别名）
 ### locate 文件名
 从数据库里面按文件名去搜索，搜索速度快，搜索大概一天一更新
 *   /etc/updatedb.conf
+
 	locate按照这个配置文件里的筛选规则来搜索
-		* PRUNE_BIND_MOUNTS = "yes"：开启搜索限制
-		* PRUNEFS: 不搜索的文件系统
-		* PRUNENAMES: 不搜索的文件类型
-		* PRUNEPATHS: 不搜索的路径
+	* PRUNE_BIND_MOUNTS = "yes"：开启搜索限制
+	* PRUNEFS: 不搜索的文件系统
+	* PRUNENAMES: 不搜索的文件类型
+	* PRUNEPATHS: 不搜索的路径
 	
 *   /var/lib/mlocate
+
 	数据库
 
 *   updatedb
+
 	更新数据库
 	
 *   locate locate
+
 	查找locate相关文件
 
 
