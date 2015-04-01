@@ -49,74 +49,75 @@ ls -l（这条命令的别名）
 
 	
 ## 压缩与解压缩
-*   .zip
-	### zip 压缩文件名 源文件
-	压缩文件
-	### zip -r 压缩文件名 源目录
-	压缩目录
-	### unzip 压缩文件
-	解压缩.zip文件
-*   .gz
-	### gzip 源文件
-	压缩为.gz格式的压缩文件，源文件会消失
-	### gzip -c 文件 > 压缩文件
-	压缩为.gz格式，源文件保留
-	### gzip -r 目录
-	压缩目录下所有的子文件，但是不能压缩目录
-	### gzip -d 压缩文件
-	解压缩文件
-	### gunzip 压缩文件
-	解压缩文件
-*   .bz2，不能压缩目录
-	### bzip2 源文件
-	压缩为.bz2格式，不保留源文件（加-k保留源文件）
-	### bzip2 -d 压缩文件
-	解压缩（加-k保留源文件）
-	### bunzip2 压缩文件
-	解压缩（加-k保留源文件）
+* .zip
+### zip 压缩文件名 源文件
+压缩文件
+### zip -r 压缩文件名 源目录
+压缩目录
+### unzip 压缩文件
+解压缩.zip文件
+* .gz
+### gzip 源文件
+压缩为.gz格式的压缩文件，源文件会消失
+### gzip -c 文件 > 压缩文件
+压缩为.gz格式，源文件保留
+### gzip -r 目录
+压缩目录下所有的子文件，但是不能压缩目录
+### gzip -d 压缩文件
+解压缩文件
+### gunzip 压缩文件
+解压缩文件
+* .bz2，不能压缩目录
+### bzip2 源文件
+压缩为.bz2格式，不保留源文件（加-k保留源文件）
+### bzip2 -d 压缩文件
+解压缩（加-k保留源文件）
+### bunzip2 压缩文件
+解压缩（加-k保留源文件）
 *   打包文件
-	### tar -cvf 打包文件名 源文件
-		打包 -c：打包 -v：显示过程 -f：指定到爆后的文件名
-	### tar -xvf 打包文件名
-		解打包 -x：解打
-	### tar -tvf 打包文件名
-		查看压缩包里面的文件
-	### tar -zcvf 压缩包名.tar.gz 源文件..
-		打包压缩
-	### tar -zxvf 压缩包名.tar.gz （-C 解压到的文件目录）
-		解压缩解打
-	### tar -jcvf 压缩包名.tar.bz2 源文件..
-		打包压缩
-	### tar -jxvf 压缩包名.tar.bz2 （-C 解压到的文件目录）
-		解压缩解打
+### tar -cvf 打包文件名 源文件
+打包 -c：打包 -v：显示过程 -f：指定到爆后的文件名
+### tar -xvf 打包文件名
+解打包 -x：解打
+### tar -tvf 打包文件名
+查看压缩包里面的文件
+### tar -zcvf 压缩包名.tar.gz 源文件..
+打包压缩
+### tar -zxvf 压缩包名.tar.gz （-C 解压到的文件目录）
+解压缩解打
+### tar -jcvf 压缩包名.tar.bz2 源文件..
+打包压缩
+### tar -jxvf 压缩包名.tar.bz2 （-C 解压到的文件目录）
+解压缩解打
 		
 
 ## 文件搜索命令
 
 
 ## 关机和重启命令
-	### shutdown [选项] 时间
-		-c：取消前一个关机命令 -h：关机 -r：重启
-		* shutdown -c
-		* shutdown -h 00:00
-		* shutdown -h now
-	### halt，poweroff，init 0
-		关机（不安全）
-	### init 6
-		重启
-	### runlevel
-		查询系统的运行级别
-	### /etc/inittab
-		系统运行级别配置文件
-	### logout
-		退出
+### shutdown [选项] 时间
+-c：取消前一个关机命令 -h：关机 -r：重启
+* shutdown -c
+* shutdown -h 00:00
+* shutdown -h now
+
+### halt，poweroff，init 0
+关机（不安全）
+### init 6
+重启
+### runlevel
+查询系统的运行级别
+### /etc/inittab
+系统运行级别配置文件
+### logout
+退出
 
 ## 网络命令
-	### /etc/sysconfig/network-scripts/ifcfg-eth0
-		网络地址配置文件
-	### /etc/sysconfig/iptables
-		防火墙配置文件（可以指定开放哪些端口）
-	### service iptables restart/start/stop
-		重启/开启/停止防火墙服务
-	### chkconfig iptables on/off
-		防火墙开放/关闭（重启后生效）
+### /etc/sysconfig/network-scripts/ifcfg-eth0
+网络地址配置文件
+### /etc/sysconfig/iptables
+防火墙配置文件（可以指定开放哪些端口）
+### service iptables restart/start/stop
+重启/开启/停止防火墙服务
+### chkconfig iptables on/off
+防火墙开放/关闭（重启后生效）
