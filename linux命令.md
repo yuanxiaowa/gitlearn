@@ -251,7 +251,7 @@ shell内部命令 的帮助
 ---
 
 
-## 挂载命令
+## 挂载命令和卸载命令
 ### mount
 查询系统中已挂在的目录
 * /proc和/sys为内存挂载点
@@ -278,6 +278,10 @@ mkdir /mnt/cdrom
 ```shell
 mount -t iso9660 /dev/sr0 /mnt/cdrom
 ```
+
+### 卸载命令
+`umount 设备文件名或挂载点`
+
 
 
 
