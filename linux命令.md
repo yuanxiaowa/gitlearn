@@ -1,6 +1,5 @@
 #linux常用命令
 
-***
 
 ## 命令基本格式以及文件处理命令
 ### cd
@@ -101,6 +100,16 @@ ls -l（这条命令的别名）
 	
 
 ## 文件搜索命令
+### locate 文件名
+从数据库里面按文件名去搜索，搜索速度快，搜索大概一天一更新
+* /etc/updatedb.conf
+locate按照这个配置文件里的筛选规则来搜索
+* /var/lib/mlocate
+数据库
+* updatedb
+更新数据库
+* locate locate
+查找locate相关文件
 
 
 ---
