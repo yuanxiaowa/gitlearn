@@ -270,14 +270,14 @@ shell内部命令 的帮助
 	* rw/ro: 读写/只读,默认是rw
 	
 ### 挂载光盘
-1. 创建挂载点: 
-```shell
-mkdir /mnt/cdrom
-```
-2. 挂载光盘:
-```shell
-mount -t iso9660 /dev/sr0 /mnt/cdrom
-```
+1.	创建挂载点: 
+	```shell
+	mkdir /mnt/cdrom
+	```
+2.	挂载光盘:
+	```shell
+	mount -t iso9660 /dev/sr0 /mnt/cdrom
+	```
 
 ### 卸载命令
 `umount 设备文件名或挂载点`
