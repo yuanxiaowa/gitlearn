@@ -118,6 +118,6 @@ for i in "$@"
 * `movie[1]=tp`
 * `declare -a movie[2]=live`
 查看数组
-* `echo{movie}` 调用数组第一个值
-* `echo{movie[0]}` 调用数组指定下标值
-* `echo{movie[*]}` 输出数组全部值，使用空格分隔
+* `echo ${movie}` 调用数组第一个值
+* `echo ${movie[0]}` 调用数组指定下标值
+* `echo ${movie[*]}` 输出数组全部值，使用空格分隔
