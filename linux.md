@@ -336,7 +336,7 @@ w的简便形式，只有USER,FROM,TTY(FROM)
 
 
 ## shell编程
-Linux中常用的shell为bash
+Linux中默认的shell为bash
 * 查看当前shell `echo $SHELL`
 * 查看系统支持哪些shell `vi /etc/shells`
 * `sh`: 进入sh shell
@@ -348,7 +348,7 @@ Linux中常用的shell为bash
 选项
 * -e 按照格式输出，若无则原样输出
 
-转移字符
+转义字符
 * \a 输入警告音
 * \b 退格键，也就是向左删除键
 * \n 换行符
@@ -369,4 +369,10 @@ Linux中常用的shell为bash
 	
 ### shell脚本
 需要以 `#!/bin/bash` 打头
+
 \# 为注释
+> 调用方式
+* 相对路径方式, 如 `./hello.sh`, 需要赋予执行权限
+* `bash 脚本名`, 如 `bash hello.sh`, 不需要赋予执行权限
+
+###
