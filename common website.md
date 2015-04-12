@@ -10,8 +10,8 @@
 * [官方地址](http://www.sublimetext.com/)
 
 > 常用插件
-
-	* 自动完成插件：[emmet](http://emmet.io/)
+>
+> * 自动完成插件：[emmet](http://emmet.io/)
 	
 ### codepen(网页编辑工具,可进行及时预览)
 * [官方网址](http://codepen.io/)
