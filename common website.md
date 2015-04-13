@@ -12,6 +12,7 @@
 > 常用插件
 >
 > * 自动完成插件：[emmet](http://emmet.io/)
+> * Grunt插件之LiveReload 实现页面自动刷新: [LiveReload](http://www.bluesdream.com/blog/grunt-plugin-livereload-wysiwyg-editor.html)
 	
 ### codepen(网页编辑工具,可进行及时预览)
 * [官方网址](http://codepen.io/)
@@ -20,7 +21,7 @@
 ---
 
 
-## 学习网址
+## 教程
 * [慕课网](http://www.mongodb.org/)
 
 ---
@@ -39,5 +40,13 @@
 ## express
 [express中文文档](http://expressjs.jser.us/)
 
-## web规范
+## 文档
 * [w3c web](http://www.w3.org/TR/)
+* [stylus](http://www.zhangxinxu.com/jq/stylus/selectors.php)
+* [express](http://expressjs.com/)
+* [Karma和Jasmine自动化单元测试](http://blog.fens.me/nodejs-karma-jasmine/)
+* [requirejs](http://www.requirejs.cn/)
+* [angularjs中文社区](http://angularjs.cn/)
+* [angularjs展示案例](http://www.ngnice.com/showcase/)
+* angularjs文档： <http://docs.angularjs.cn/api> <http://docs.ngnice.com/guide>
+* [underscore](http://www.css88.com/doc/underscore/)
