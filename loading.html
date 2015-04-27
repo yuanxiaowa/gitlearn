@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Loading效果</title>
+	<style>
+		#preloader_1 {
+			position: relative;
+			left: 50%;
+			margin-bottom: 50px;
+		}
+		#preloader_1 span{
+			position: absolute;
+			bottom: 0;
+			width: 9px;
+			height: 5px;
+			background: #9b59b6;
+			animation: preloader_1 1.5s infinite ease-in-out;
+		}
+		#preloader_1 span:nth-child(2){
+			left: 11px;
+			animation-delay: .2s;
+		}
+
+		#preloader_1 span:nth-child(3){
+			left: 22px;
+			animation-delay: .4s;
+		}
+
+		#preloader_1 span:nth-child(4){
+			left: 33px;
+			animation-delay: .6s;
+		}
+
+		#preloader_1 span:nth-child(5){
+			left: 44px;
+			animation-delay: .8s;
+		}
+
+		@keyframes preloader_1 {
+			0% {
+				height: 5px;
+				transform: translateY(0px);
+				background: #9b59b6;
+			}
+			25% {
+				height: 30px;
+				transform: translateY(15px);
+				background: #3498db;
+			}
+			50% {
+				height: 5px;
+				transform: translateY(0px);
+				background: #9b59b6;
+			}
+		}
+
+		#preloader_2 {
+			position: relative;
+			left: 50%;
+			width: 40px;
+			height: 40px;
+		}
+		#preloader_2 span {
+			display: block;
+			bottom: 0;
+			width: 20px;
+			height: 20px;
+			background: #9b59b6;
+			position: absolute;
+		}
+		#preloader_2 span:nth-child(1) {
+			animation: preloader_2_1 1.5s infinite ease-in-out;
+		}
+		#preloader_2 span:nth-child(2) {
+			left: 20px;
+			animation: preloader_2_2 1.5s infinite ease-in-out;
+		}
+		#preloader_2 span:nth-child(3) {
+			top: 0;
+			animation: preloader_2_3 1.5s infinite ease-in-out;
+		}
+		#preloader_2 span:nth-child(4) {
+			left: 20px;
+			top: 0;
+			animation: preloader_2_4 1.5s infinite ease-in-out;
+		}
+		@keyframes preloader_2_1 {
+			0% {
+				transform: translateX(0) translateY(0) rotate(0);
+				border-radius: 0;
+			}
+			50% {
+				transform: translateX(-20px) translateY(-10px) rotate(-180deg);
+				border-radius: 20px;
+				background: #3498db;
+			}
+			80% {
+				transform: translateX(0) translateY(0) rotate(-360deg);
+				border-radius: 0;
+			}
+			100% {
+				transform: translateX(0) translateY(0) rotate(-360deg);
+				border-radius: 0;
+			}
+		}
+		@keyframes preloader_2_2 {
+			0% {
+				transform: translateX(0) translateY(0) rotate(0);
+				border-radius: 0;
+			}
+			50% {
+				transform: translateX(20px) translateY(-10px) rotate(180deg);
+				border-radius: 20px;
+				background: #f1c40f;
+			}
+			80% {
+				transform: translateX(0) translateY(0) rotate(360deg);
+				border-radius: 0;
+			}
+			100% {
+				transform: translateX(0) translateY(0) rotate(360deg);
+				border-radius: 0;
+			}
+		}
+		@keyframes preloader_2_3 {
+			0% {
+				transform: translateX(0) translateY(0) rotate(0);
+				border-radius: 0;
+			}
+			50% {
+				transform: translateX(-20px) translateY(10px) rotate(-180deg);
+				border-radius: 20px;
+				background: #3ecc71;
+			}
+			80% {
+				transform: translateX(0) translateY(0) rotate(-360deg);
+				border-radius: 0;
+			}
+			100% {
+				transform: translateX(0) translateY(0) rotate(-360deg);
+				border-radius: 0;
+			}
+		}
+		@keyframes preloader_2_4 {
+			0% {
+				transform: translateX(0) translateY(0) rotate(0);
+				border-radius: 0;
+			}
+			50% {
+				transform: translateX(20px) translateY(10px) rotate(180deg);
+				border-radius: 20px;
+				background: #3498db;
+			}
+			80% {
+				transform: translateX(0) translateY(0) rotate(360deg);
+				border-radius: 0;
+			}
+			100% {
+				transform: translateX(0) translateY(0) rotate(360deg);
+				border-radius: 0;
+			}
+		}
+		#preloader_3 {
+			position: relative;
+			left: 50%;
+		}
+		#preloader_3:before {
+			width: 20px;
+			height: 20px;
+			border-radius: 20px;
+			content: '';
+			position: absolute;
+			background: #9b59b6;
+			animation: preloader_3_before 1.5s infinite ease-in-out;
+		}
+
+		#preloader_3:after {
+			width: 20px;
+			height: 20px;
+			border-radius: 20px;
+			content: '';
+			position: absolute;
+			left: 22px;
+			background: #2ecc71;
+			animation: preloader_3_after 1.5s infinite ease-in-out;
+		}
+		@keyframes preloader_3_before {
+			0% {
+				transform: translateX(0) rotate(0);
+			}
+			50% {
+				transform: translateX(50px) scale(1.2) rotate(260deg);
+				background: #2ecc71;
+				border-radius: 0;
+			}
+		}
+		@keyframes preloader_3_after {
+			0% {
+				transform: translateX(0);
+			}
+			50% {
+				transform: translateX(-50px) scale(1.2) rotate(-260deg);
+				background: #9b59b6;
+				border-radius: 0;
+			}
+		}
+		#preloader_4 {
+			position: relative;
+			left: 50%;
+		}
+		#preloader_4 span {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			background: #3498db;
+			opacity: .5;
+			border-radius: 20px;
+			animation: preloader_4 1s infinite ease-in-out;
+		}
+		#preloader_4 span:nth-child(2) {
+			left: 20px;
+			animation-delay: .2s;
+		}
+		#preloader_4 span:nth-child(3) {
+			left: 40px;
+			animation-delay: .4s;
+		}
+		#preloader_4 span:nth-child(4) {
+			left: 60px;
+			animation-delay: .6s;
+		}
+		#preloader_4 span:nth-child(5) {
+			left: 80px;
+			animation-delay: .8s;
+		}
+		@keyframes preloader_4 {
+			0% {
+				opacity: .3;
+				transform: translateY(0);
+				box-shadow: 0 0 3px rgba(0,0,0,.1);
+			}
+			50% {
+				opacity: 1;
+				transform: translateY(-10px);
+				background: #f1c40f;
+				box-shadow: 0 20px 3px rgba(0,0,0,.05);
+			}
+		}
+
+		#preloader_5 {
+			position: relative;
+			left: 50%;
+			width: 30px;
+			height: 30px;
+			background: #3498db;
+			border-radius: 50px;
+			animation: preloader_5 1.5s infinite linear;
+		}
+
+		#preloader_5:after {
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			border-top: 10px solid  #9b59b6;
+			border-bottom: 10px solid  #9b59b6;
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-radius: 50px;
+			content: '';
+			top: -20px;
+			left: -20px;
+			animation: preloader_5_after 1.5s infinite linear;
+		}
+		@keyframes preloader_5 {
+			0% {
+				transform: rotate(0);
+			}
+			50% {
+				transform: rotate(180deg);
+				background: #2ecc71;
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+		@keyframes preloader_5_after {
+			0% {
+				border-top-color: #9b59b6;
+				border-bottom-color: #9b59b6;
+			}
+			50% {
+				border-top-color: #3498db;
+				border-bottom-color: #3498db;
+			}
+		}
+		#preloader_6 {
+			position: relative;
+			margin-left: 50%;
+			width: 42px;
+			height: 42px;
+			animation: preloader_6 5s infinite linear;
+		}
+		#preloader_6 span {
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			background: red;
+			display: block;
+			animation: preloader_6_span 1s infinite linear;
+		}
+		#preloader_6 span:nth-child(1) {
+			background: #2ecc71;
+		}
+		#preloader_6 span:nth-child(2) {
+			left: 22px;
+			background: #9b59b6;
+			animation-delay: .2s;
+		}
+		#preloader_6 span:nth-child(3) {
+			top: 22px;
+			background: #3498db;
+			animation-delay: .4s;
+		}
+		#preloader_6 span:nth-child(4) {
+			left: 22px;
+			top: 22px;
+			background: #f1c40f;
+			animation-delay: .6s;
+		}
+		@keyframes preloader_6 {
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+		@keyframes preloader_6_span {
+			50% {
+				transform: scale(.5);
+			}
+		}
+	</style>
+</head>
+<body>
+	<h2>音浪效果</h2>
+	<div id="preloader_1">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<h2>方与圆的转换效果</h2>
+	<div id="preloader_2">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<h2>交叉变换效果</h2>
+	<div id="preloader_3"></div>
+	<h2>蛇形效果</h2>
+	<div id="preloader_4">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<h2>旋转效果</h2>
+	<div id="preloader_5"></div>
+	<h2>Microsoft效果</h2>
+	<div id="preloader_6">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<hr>
+	<h2>Loading效果网站</h2>
+	<blockquote>
+		<a href="http://connoratherton.com/loaders"><img src="http://cdn1.w3cplus.com/cdn/farfuture/-8DIW0JWMDUw1mpdcCtkPL_yAalMKLvwF5OEPfC-dMY/mtime:1428842426/sites/default/files/blogs/2015/1504/loading.gif" alt="Loaders.css" title="Loader"></a>
+	</blockquote>
+	<blockquote>
+		第二个是在线制作Loading的Web工具:
+		<a href="http://cssload.net/">CSS Load.net</a>
+	</blockquote>
+</body>
+</html>
