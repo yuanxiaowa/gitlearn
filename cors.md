@@ -25,10 +25,10 @@ $.ajax(url, {
 ```
 ### angular
 *
-	```js
-	$http({withCredentials: true, ...}).post(...)
-	```
+```js
+$http({withCredentials: true, ...}).post(...)
+```
 *
-	```js
-	$httpProvider.defaults.withCredentials = true;
-	```
+```js
+$httpProvider.defaults.withCredentials = true;
+```
