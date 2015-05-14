@@ -24,11 +24,5 @@ $.ajax(url, {
 })
 ```
 ### angular
-*
-```js
-$http({withCredentials: true, ...}).post(...)
-```
-*
-```js
-$httpProvider.defaults.withCredentials = true;
-```
+* `$http({withCredentials: true, ...}).post(...)`
+* `js$httpProvider.defaults.withCredentials = true;`
