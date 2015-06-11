@@ -549,3 +549,6 @@ ssh
 1. `./configure`
 2. `make`: 相当于 `gcc program.c -o program`
 3. `make install`: 相当于 mv program /bin
+
+## 系统服务路径
+/etc/init.d/
