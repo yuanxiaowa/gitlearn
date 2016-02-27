@@ -86,13 +86,17 @@
 
 `git merge dev`
 
-- 删除dev分支
+- 删除本地dev分支
 
 `git branch -d dev`
 
 - 强制删除dev分支
 
 `git branch -D dev`
+
+- 删除远程分支
+
+`git push origin :dev`
 
 - 查看分支合并状况 --graph：查看分支合并图
 
