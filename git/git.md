@@ -166,16 +166,20 @@ git config
   
 ## 搭建git服务器
 *一、安装git*
+
 1. `apt-get install git`
 2. `yum install git`
 
 *二、创建git用户，用来运行git服务*
+
 `adduser username`
 
 *三、创建证书登录*
+
 收集用户的公钥，导入~/git/.ssh/authorized_keys
 
 *四、初始化git仓库*
+
 1. `git init --bare sample.git`
 > 仓库为sample.git文件夹
 
