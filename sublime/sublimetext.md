@@ -26,3 +26,22 @@
 - [Color​Picker](https://packagecontrol.io/packages/ColorPicker) 颜色选择插件
 - [Terminal](https://packagecontrol.io/packages/Terminal) 使用终端打开文件
 - [Markdown Preview](https://packagecontrol.io/packages/Markdown%20Preview) markdown预览
+## 授权码
+```
+—– BEGIN LICENSE —–
+Ryan Clark
+Single User License
+EA7E-812479
+2158A7DE B690A7A3 8EC04710 006A5EEB
+34E77CA3 9C82C81F 0DB6371B 79704E6F
+93F36655 B031503A 03257CCC 01B20F60
+D304FA8D B1B4F0AF 8A76C7BA 0FA94D55
+56D46BCE 5237A341 CD837F30 4D60772D
+349B1179 A996F826 90CDB73C 24D41245
+FD032C30 AD5E7241 4EAA66ED 167D91FB
+55896B16 EA125C81 F550AF6B A6820916
+—— END LICENSE ——
+```
+> [more..](http://appnee.com/sublime-text-3-universal-license-keys-collection-for-win-mac-linux)
+
+[官网](http://www.sublimetext.com/) [论坛](http://sublimetext.iaixue.com/forum.php)
